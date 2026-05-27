@@ -1,0 +1,26 @@
+{
+  "name": "linkedin-job-email-automation-api",
+  "version": "1.0.0",
+  "description": "Backend-only API for LinkedIn job scraping and AI-powered cold emailing.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand --coverage",
+    "test:integration": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand tests/integration",
+    "test:unit": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand tests/unit"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "playwright": "^1.49.1",
+    "resend": "^4.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
